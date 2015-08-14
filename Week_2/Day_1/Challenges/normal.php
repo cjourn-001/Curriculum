@@ -18,7 +18,11 @@
 <p>
 	<?php
 
-		// code goes here ...
+		$months=range(1,12);
+		foreach ($months as $month){
+			$name = date ('F', strtotime("2015-$month-01"));
+			
+		}
 
 
 	?>

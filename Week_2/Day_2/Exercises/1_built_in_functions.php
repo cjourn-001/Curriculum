@@ -26,14 +26,26 @@
         // Ensure proper capitalization of the following names
         // by looping through and modifying the $names array.
         // Also remove any leading or trailing whitespace from the name.
-
-
+        for($i=0; $i < count($names); $i++){
+            $names[$i]= ucwords(strtolower(trim($names[$i])));
+        }   
+        
+        
+        
+        print_r($names);
+        
         // Pick a random name from the array
-        $name = 
-
+        $name = $names[rand(0,count($names)- 1)];
+        echo $name;
         // Multiply the position of the letter 'a' (case insensitive) in the name by the
         // length of the last name divided by the number of words in the string
-        $score = 
+        $posA=     stripos($name, "a"); //My character pos function;
+        $expnames= explode(' ',$name);
+        $last= array_pop($expnames);
+        $lastlen= strlen($last) ;
+        $numWords= str_word_count($expnames);
+        $score =  $posA * $namelen / $numWords;
+        
 
         // Print out the person's name and their "score"
 

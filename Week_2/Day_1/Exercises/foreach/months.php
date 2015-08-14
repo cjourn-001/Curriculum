@@ -22,6 +22,9 @@
 
                 // display correct Month Number and Month Name given the above array
                 // i.e. 1 - January
+                
+                foreach ($monthArray as $months)
+                    echo "<li>$months<li/>";
 
             ?>
         </p>

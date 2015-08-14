@@ -15,7 +15,7 @@
         $food = '';
 
         // Fruits
-        if($food == "grape" || $food == "lemon" || $food == "orange"  || $food == "banana"){
+        if($food == "grape" || $food == "lemon" || $food == "orange"  || $food == "banana"){ 
           $style = '#FF2424'; // redish color
         }
         // vegetables
